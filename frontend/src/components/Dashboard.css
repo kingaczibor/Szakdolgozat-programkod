@@ -1,0 +1,32 @@
+.tabs {  
+    display: flex;  
+  }
+  .tab {  
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: rgb(107, 145, 198); 
+    padding: 2em 0;  
+    border: none;
+
+  }
+  .tab:not(:last-child) {
+    border-right: 1px solid steelblue;  
+  }
+  .tab.active {
+    background: rgb(42, 103, 149);
+    font-weight: bold;
+  }
+  .panel {
+    display: none;
+    background-color: #d8cece;
+    padding: 10px;
+  }
+  .panel.active {
+    display: block;
+  }
+
+.button {
+    margin-top: 20px;
+    color: #d8cece;
+}

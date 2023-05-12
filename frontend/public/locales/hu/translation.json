@@ -1,0 +1,7 @@
+{
+    "email": "E-mail cím",
+    "login": "Belépés",
+    "password": "Jelszó",
+    "password_confirm": "Jelszó megerősítése",
+    "register": "Regisztráció"
+}
