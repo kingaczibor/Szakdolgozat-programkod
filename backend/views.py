@@ -7,24 +7,6 @@ from .models import *
 from .serializers import *
 
 
-
-class AccountAuthBackend(object):
-
-    @staticmethod
-    def authenticate(email=None, password=None):
-        try:
-            user = User.objects.get(email=email)
-            if user.check_password(password):
-                return user
-        except User.DoesNotExist:
-            return None
-
-    @staticmethod
-    def get_user(id_):
-        try:
-            return User.objects.get(pk=id_) # <-- tried to get by email here
-        except User.DoesNotExist:
-            return None
     
 class SignInView(TokenObtainPairView):
     serializer_class = SignInSerializer

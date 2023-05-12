@@ -67,7 +67,7 @@ export default function Repairform(props) {
             }
         } catch (error) {
             console.log(error);
-            toast.error("Sikertelen beküldés, kérjük ellenőrizze az űrlapadatokat");
+            toast.error("Sikertelen beküldés, kérjük ellenőrizze a beírt adatokat!");
           }
     }
     
